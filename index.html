@@ -10,10 +10,38 @@
     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
     </p>
     
+    
+    <label>Künstler(in):
+    <select name="top5" size="5">
+      <option>Heino</option>
+      <option>Michael Jackson</option>
+      <option>Tom Waits</option>
+      <option>Nina Hagen</option>
+      <option>Marianne Rosenberg</option>
+    </select>
+  </label>
+    
+    
     <style>
       background-color: blue;
     </style>
   <script>
+      var button =document.getElementById('los'); 
+  button.addEventListener ('click', ermittlePosition);
+  var ausgabe = document.getElementById('ausgabe');
+
+function ermittlePosition() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(zeigePosition);
+    } else { 
+        ausgabe.innerHTML = 'Ihr Browser unterstützt keine Geolocation.';
+    }
+}
+
+function zeigePosition(position) {
+    ausgabe.innerHTML = "Ihre Koordinaten sind:<br> Breite: " + position.coords.latitude + 
+    "<br>Länge: " + position.coords.longitude;	
+}
     </script>
    <body>
 </html>
