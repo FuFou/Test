@@ -2,41 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="713855f6-d60d-4dea-ab38-69eed74b307d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/css/external/fontawesome/css/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/css/external/fontawesome/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/css/external/fontawesome/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/css/external/fontawesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/css/external/fontawesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/css/external/fontawesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/css/external/fontawesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/css/external/fontawesome/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/css/internal/editor-min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/css/internal/icons/icons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/css/internal/icons/icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/css/internal/icons/icons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/css/internal/icons/icons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/css/internal/icons/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/data/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/images/editor/ajax_loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/images/editor/cursor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/images/editor/download.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/images/editor/folder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/images/editor/fullsize.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/images/editor/mf_loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/images/editor/mf_loader.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/images/editor/page.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/images/editor/pagehide.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/images/editor/pageicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/images/editor/rotation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/images/editor/themes.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/images/editor/transparent-BG.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/images/editor/viewerClose.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/images/editor/viewerDelete.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/images/editor/viewerScale.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/images/editor/zoomfit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/js/external/webfont.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exporthtml/exporthtml/js/internal/mf_wireframepro-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,9 +48,9 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1579111090616">
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1579111251225">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579111090616" />
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579111251225" />
   </component>
 </project>
