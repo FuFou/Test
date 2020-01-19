@@ -22,7 +22,7 @@
       <h1>Menschen in Not</h1>
       <img src="https://img.icons8.com/android/24/000000/long-arrow-left.png">
 
-      <p>Was möchtest Du melden?<br><br>
+      <p>Was möchtest Du melden?<br>
 <form action="/action_page.php">
 <select required>
   <option value="">Bitte auswählen*</option>
@@ -31,16 +31,17 @@
   <option value="Sonstiges">Sonstiges</option>
 </select><br><br></form></p>
 
-<p>Wo ist das?<br><br>
+<p>Wo ist das?<br>
 <form action="form.php" method="post"> 
       <textarea id="text" name="text" cols="50" rows="6"></textarea>
       <br><br></form></p>
       
-<p>Um was für eine Notsituation geht es?<br><br>
+<p>Um was für eine Notsituation geht es?<br>
 <form action="form.php" method="post"> 
       <textarea id="text" name="text" cols="50" rows="6"></textarea>
       <br><br>
 <input type="submit" value="Weiter" />
+<a href="https://fufou.github.io/Test/Email" class="button">Weiter</a>
 </form></p>  
     </div>
   
