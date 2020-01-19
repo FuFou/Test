@@ -1,6 +1,13 @@
 <html>
       <meta charset="utf-8">
       <body>
+        <div id=left>
+       <p> links</p>
+    </div> 
+    <div id=right>
+       <p> rechts</p>
+    </div>
+    <div id=middle>
       <h1>BürgerApp</h1>
       <p>Liebe Bürgerin, lieber Bürger,<br><br>
             hier kannst Du melden, wenn Dir etwas in unserer Stadt auffällt, wo die Stadtverwaltung Frankfurt aktiv werden sollte.<br><br>
