@@ -16,9 +16,13 @@
             Worauf bezieht sich Deine Meldung?<br><br></p>
             
     <a href="https://fufou.github.io/Test/index" class="button">Straßenverkehr</a>
-    <a href="https://fufou.github.io/Test/index2" class="button">Link to another site</a>
-    <a href="https://fufou.github.io/Test/index2" class="button">Link to another site</a>
-    <a href="https://fufou.github.io/Test/index2" class="button">Link to another site</a>
+    <br>
+    <a href="https://fufou.github.io/Test/index2" class="button">Abfallbeseitigung</a>
+    <br>
+    <a href="https://fufou.github.io/Test/index2" class="button">Menschen in Not</a>
+    <br>
+    <a href="https://fufou.github.io/Test/index2" class="button">Sonstiges</a>
+    <br>
       
       <style type="text/css">
     html, body { background-color:#fff; font-weight:bold; font-family:Arial; font-size:120%; height:100%; margin:0; padding:0;}
