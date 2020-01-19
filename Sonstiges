@@ -28,6 +28,7 @@
       <textarea id="text" name="text" cols="50" rows="6"></textarea>
       <br><br>
       <input type="submit" value="Weiter" />
+      <a href="https://fufou.github.io/Test/Email" class="button">Weiter</a>
    </div> 
 </form></p> 
     </div>
