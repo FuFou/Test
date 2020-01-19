@@ -29,13 +29,19 @@
   <option value="Obdachlose Person in Not, z.B. Kältebus benötigt">Obdachlose Person in Not, z.B. Kältebus benötigt</option>
   <option value="Kinder oder Jugendliche in Not">Kinder oder Jugendliche in Not</option>
   <option value="Sonstiges">Sonstiges</option>
-</select><br><br>>/p>
-<p>Wo ist das?<br>
+</select><br><br></p>
+
+<p>Wo ist das?<br><br>
+<form action="form.php" method="post"> 
+      <textarea id="text" name="text" cols="50" rows="6"></textarea>
+      <br><br>
+      
+<p>Um was für eine Notsituation geht es?<br><br>
 <form action="form.php" method="post"> 
       <textarea id="text" name="text" cols="50" rows="6"></textarea>
       <br><br>
 <input type="submit" value="Weiter" />
-</form></p> 
+</form></p>  
     </div>
   
   <a href="https://fufou.github.io/Test/Startseite" class="button">Zurück</a>
