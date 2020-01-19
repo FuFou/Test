@@ -3,6 +3,32 @@
       <meta charset="utf-8">
       
       <body>
+      <div id=top>
+          <p>oben</p>
+
+
+      <nav>
+          <ul>
+              <li>
+                  <!-- link one -->
+                  <a href="#aboutMe"> About Me </a>
+              </li>
+              <li>
+                  <!-- link two -->
+                  <a href="#projects"> Projects </a>
+              </li>
+              <li>
+                  <!-- link three -->
+                  <a href="#cv"> CV </a>
+              </li>
+              <li>
+                  <!-- link four -->
+                  <a href="#contacts"> Contacts </a>
+              </li>
+          </ul>
+      </nav>
+      </div>
+
     <div id=left>
        <p> links</p>
     </div> 
@@ -17,11 +43,11 @@
             
     <a href="https://fufou.github.io/Test/Straßenverkehr" class="button">Straßenverkehr</a>
     <br><br>
-    <a href="https://fufou.github.io/Test/index2" class="button">Abfallbeseitigung</a>
+    <a href="https://fufou.github.io/Test/Straßenverkehr" class="button">Abfallbeseitigung</a>
     <br><br>
-    <a href="https://fufou.github.io/Test/index2" class="button">Menschen in Not</a>
+    <a href="https://fufou.github.io/Test/Straßenverkehr" class="button">Menschen in Not</a>
     <br><br>
-    <a href="https://fufou.github.io/Test/index2" class="button">Sonstiges</a>
+    <a href="https://fufou.github.io/Test/Straßenverkehr" class="button">Sonstiges</a>
     <br><br>
       
       <style type="text/css">
@@ -54,6 +80,38 @@
           height:1080;
     }
 
+    li{
+  list-style-type: none;
+}
+ button{
+    /*makes the button visible*/
+    display: block;
+
+    /*since we are here, we can style it a little bit!*/
+    padding: 2vw;
+    font-size: 3vh;
+    background-color: #AFE0FF;
+    border: none;
+
+    /*outline none removes the default blue border that appears anytime you click on the button*/
+    outline: none;
+
+    cursor: pointer;
+  }
+}
+nav{
+  width: 100vw;
+}
+
+button{
+    display: block;
+    ...
+    cursor: pointer;
+
+    /*this put the button on the left*/
+    align-self: flex-start;
+  }
+
 a.button {
     -webkit-appearance: button;
     -moz-appearance: button;
@@ -63,8 +121,52 @@ a.button {
     color: initial;
 }
     
-  
+  /*change the layout of the navigation bar for all the screens
+that have a width less or equal than 500px*/
+
+@media only screen and (max-width: 500px) {
+  /*shows elements in a column*/
+  ul{
+    flex-direction: column;
+  }
+
+  /* deletes margin on top or bottom of the a tag*/
+  li{
+    margin: 0;
+  }
+ /* makes sure that the a tag will take the entire screen*/
+  a{
+    display: block;
+  }
+}
   </style>
+
+        <!-- library link -->
+        <script src="jquery-3.4.0.min.js"></script>
+
+        <!-- script below -->
+        <script type="text/javascript">
+
+
+            /* only execute this script when the document is ready */
+$(document).ready(function(){
+  /* function called when you click of the button */
+  $("button").click(function(){
+
+      /* this if else to change the text in the button */
+      if($("button").text() == "☰"){
+       $("button").text("🞬");
+      }else{
+        $("button").text("☰");
+      }
+
+    /* this function toggle the visibility of our "li" elements */
+    $("li").toggle("slow");
+  });
+});
+
+
+        </script>
   </body>
   </html>
 
