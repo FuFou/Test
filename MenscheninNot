@@ -29,7 +29,7 @@
   <option value="Obdachlose Person in Not, z.B. Kältebus benötigt">Obdachlose Person in Not, z.B. Kältebus benötigt</option>
   <option value="Kinder oder Jugendliche in Not">Kinder oder Jugendliche in Not</option>
   <option value="Sonstiges">Sonstiges</option>
-</select><br><br>
+</select><br><br>>/p>
 <p>Wo ist das?<br>
 <form action="form.php" method="post"> 
       <textarea id="text" name="text" cols="50" rows="6"></textarea>
