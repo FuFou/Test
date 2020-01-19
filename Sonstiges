@@ -19,14 +19,14 @@
        <p> rechts</p>
     </div>
     <div id=middle>
-      <h1>Straßenverkehr</h1>
+      <h1>Sonstiges</h1>
       <img src="https://img.icons8.com/android/24/000000/long-arrow-left.png">
 
       <p>Was möchtest Du melden?<br><br>
 <form action="form.php" method="post"> 
    <div>  
-      <label for="text">Was möchtest Du melden?</label>
-      <textarea id="text" name="text" cols="35" rows="4"></textarea> 	
+      <textarea id="text" name="text" cols="35" rows="4"></textarea>
+      <br><br>
       <input type="submit" value="Weiter" />
    </div> 
 </form></p> 
