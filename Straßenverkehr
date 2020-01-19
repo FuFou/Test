@@ -22,10 +22,8 @@
        <p> rechts</p>
     </div>
     <div id=middle>
-      <h1>BürgerApp</h1>
-      <p>Liebe Bürgerin, lieber Bürger,<br><br>
-            hier kannst Du melden, wenn Dir etwas in unserer Stadt auffällt, wo die Stadtverwaltung Frankfurt aktiv werden sollte.<br><br>
-            Worauf bezieht sich Deine Meldung?<br><br></p>
+      <h1>Straßenverkehr</h1>
+      <p>Was möchtest du melden?<br><br>
 <form action="/action_page.php">
 <select required>
   <option value="">Bitte auswählen*</option>
@@ -98,4 +96,3 @@ a.button {
     </script>
   
 </html>
-

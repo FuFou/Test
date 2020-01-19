@@ -1,0 +1,70 @@
+<html>
+
+      <meta charset="utf-8">
+      
+      <body>
+    <div id=left>
+       <p> links</p>
+    </div> 
+    <div id=right>
+       <p> rechts</p>
+    </div>
+    <div id=middle>
+      <h1>BürgerApp</h1>
+      <p>Liebe Bürgerin, lieber Bürger,<br><br>
+            hier kannst Du melden, wenn Dir etwas in unserer Stadt auffällt, wo die Stadtverwaltung Frankfurt aktiv werden sollte.<br><br>
+            Worauf bezieht sich Deine Meldung?<br><br></p>
+            
+    <a href="https://fufou.github.io/Test/Straßenverkehr" class="button">Straßenverkehr</a>
+    <br><br>
+    <a href="https://fufou.github.io/Test/index2" class="button">Abfallbeseitigung</a>
+    <br><br>
+    <a href="https://fufou.github.io/Test/index2" class="button">Menschen in Not</a>
+    <br><br>
+    <a href="https://fufou.github.io/Test/index2" class="button">Sonstiges</a>
+    <br><br>
+      
+      <style type="text/css">
+    html, body { background-color:#fff; font-weight:bold; font-family:Arial; font-size:120%; height:100%; margin:0; padding:0;}
+    body {
+        min-width:1000px;
+    }
+    #left {
+        float:left;
+        width:200px;
+        background-color:white;
+          height:1080;
+                    margin: 50px;
+          padding: 25px;
+    }
+    #right {
+        float:right;
+        width:200px;
+        background-color:white;
+          height:1080;
+                    margin: 50px;
+          padding: 25px;
+    }
+    #middle {
+      background-image:linear-gradient(0deg, #B8B169 30%, #718F97 65%);
+        min-width:600px;
+         text-align: center;
+          margin: 50px;
+          padding: 25px;
+          height:1080;
+    }
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+    
+  
+  </style>
+  </body>
+  </html>
+
