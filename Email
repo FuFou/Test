@@ -28,6 +28,7 @@
       <textarea id="text" name="text" cols="50" rows="1"></textarea>
       <br><br>
       <input type="submit" value="Absenden" />
+      <a href="https://fufou.github.io/Test/Abschluss" class="button">Absenden</a>
    </div> 
 </form></p> 
     </div>
