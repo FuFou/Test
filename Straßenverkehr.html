@@ -73,9 +73,7 @@
 </div>
 	    <h1>Straßenverkehr</h1>
       <p>Was möchtest du melden?<br>
-      <p>Was möchtest Du melden?<br>
-      <p>Was möchtest Du melden?<br>
-	      
+  
 <form action="/action_page.php">
 <select required>
   <option value="">Bitte auswählen*</option>
@@ -322,11 +320,17 @@ a:hover
 
 
 </body>
+      <div id="pos">
+        Deine Position wird ermittelt...
+    </div>
     
+    <script>
+        navigator.geolocation.getCurrentPosition(function(position){ 
+            document.getElementById('pos').innerHTML = 'Latitude: '+position.coords.latitude+' / Longitude: '+position.coords.longitude;
+        }, function(){
+            document.getElementById('pos').innerHTML = 'Deine Position konnte leider nicht ermittelt werden';
+        });
+    </script>  
     
-    
-  <script>
- 
-    </script>
-  
+
 </html>
