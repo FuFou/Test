@@ -31,6 +31,9 @@
 <p>Wo ist das?<br>
 	
 	</br>
+	   <p>Wo ist das?<br>
+	
+	</br>
 	    <div id="result">
         <!--Position information will be inserted here-->
     </div>
@@ -39,6 +42,7 @@
 <form action="form.php" method="post"> 
       <textarea id="text" name="text" cols="50" rows="6"></textarea>
       <br><br></form></p>
+
       
 <p>Wie sieht es aus?<br>
 <form action="form.php" method="post"> 
@@ -128,16 +132,7 @@ a { color: inherit; }
     
     
   <script>
-     function showPosition() {
-        if(navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function(position) {
-                var positionInfo = "Your current position is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude + ")";
-                document.getElementById("result").innerHTML = positionInfo;
-            });
-        } else {
-            alert("Sorry, your browser does not support HTML5 geolocation.");
-        }
-    }
+
     </script>
   
 </html>
