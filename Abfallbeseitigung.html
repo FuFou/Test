@@ -30,6 +30,11 @@
 </select><br><br></form></p>
 
 <p>Wo ist das?<br>
+	    <div id="result">
+        <!--Position information will be inserted here-->
+    </div>
+    <button type="button" onclick="showPosition();">Show Position</button>
+	
 <form action="form.php" method="post"> 
       <textarea id="text" name="text" cols="50" rows="6"></textarea>
       <br><br></form></p>
@@ -45,11 +50,14 @@
       <br><br>
 <a href="https://fufou.github.io/Test/Email" class="button">Weiter</a>
 </form></p>  
+
+
+<a href="https://fufou.github.io/Test/Startseite" class="button">Zurück</a>
     </div>
   
-  <a href="https://fufou.github.io/Test/Startseite" class="button">Zurück</a>
+  
 
-  <a href="https://icons8.com/icon/70798/pfeil:-lang,-links">Pfeil: lang, links icon by Icons8</a>
+  
   <style type="text/css">
     html, body { font-weight:bold; font-family:Arial; font-size:120%; height:100%; margin:0; padding:0;}
     body {
@@ -112,7 +120,16 @@ a { color: inherit; }
     
     
   <script>
- 
+     function showPosition() {
+        if(navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var positionInfo = "Your current position is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude + ")";
+                document.getElementById("result").innerHTML = positionInfo;
+            });
+        } else {
+            alert("Sorry, your browser does not support HTML5 geolocation.");
+        }
+    }
     </script>
   
 </html>
