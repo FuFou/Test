@@ -1,6 +1,17 @@
 <html>
       <meta charset="utf-8">
-
+<script>
+    function showPosition() {
+        if(navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var positionInfo = "Your current position is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude + ")";
+                document.getElementById("result").innerHTML = positionInfo;
+            });
+        } else {
+            alert("Sorry, your browser does not support HTML5 geolocation.");
+        }
+    }
+</script>
       <head>
 
         <title>BuergerApp, eine Initiativ der ibm-skillsbuild Gruppe 2019</title>
@@ -30,6 +41,10 @@
 </select><br><br></form></p>
 
 <p>Wo ist das?<br>
+	    <div id="result">
+        <!--Position information will be inserted here-->
+    </div>
+    <button type="button" onclick="showPosition();">Standort freigeben</button>
 <form action="form.php" method="post"> 
       <textarea id="text" name="text" cols="50" rows="6"></textarea>
       <br><br></form></p>
