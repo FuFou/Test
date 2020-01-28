@@ -1,6 +1,17 @@
 <html>
       <meta charset="utf-8">
-
+<script>
+    function showPosition() {
+        if(navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var positionInfo = "Your current position is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude + ")";
+                document.getElementById("result").innerHTML = positionInfo;
+            });
+        } else {
+            alert("Sorry, your browser does not support HTML5 geolocation.");
+        }
+    }
+</script>
       <head>
 
         <title>BuergerApp, eine Initiativ der ibm-skillsbuild Gruppe 2019</title>
@@ -17,71 +28,9 @@
     <div id=right>
     </div>
     <div id=middle>
+      <h1>Straßenverkehr</h1>
 
-	        <div style="float:left;position:relative; ">
-          <img src="icons/zurück-icon.png">
-          <a href="https://fufou.github.io/Test/Startseite" class="button">Zurück</a>
-
-        </div>    
-	    
-	    
-	    
-	    
-	    
-<!-- 	Hamburger Menu-->
-	    
-	    
-	    
-	    
-	    
-        <div style=" width: 300px; float:right; position:relative;">
-          <!--    Made by Erik Terwan    -->
-          <!--   24th of November 2015   -->
-          <!--        MIT License        -->
-          <nav role='navigation'>
-            <div id="menuToggle">
-              <!--
-              A fake / hidden checkbox is used as click reciever,
-              so you can use the :checked selector on it.
-              -->
-              <input type="checkbox" />
-
-              <!--
-              Some spans to act as a hamburger.
-
-              They are acting like a real hamburger,
-              not that McDonalds stuff.
-              -->
-              <span></span>
-              <span></span>
-              <span></span>
-
-              <!--
-              Too bad the menu has to be inside of the button
-              but hey, it's pure CSS magic.
-              -->
-              <ul id="menu">
-                <a href="#"><li>Hauptseite</li></a>
-                <a href="#"><li>Über uns</li></a>
-                <a href="#"><li>Info</li></a>
-                <a href="#"><li>Contact</li></a>
-                <a href="https://erikterwan.com/" target="_blank"><li>Joblinge</li></a>
-              </ul>
-            </div>
-          </nav>
-        </div>
-
-
-
-
-
-      
-
-
-</div>
-	    <h1>Straßenverkehr</h1>
-      <p>Was möchtest du melden?<br>
-  
+      <p>Was möchtest Du melden?<br><br>
 <form action="/action_page.php">
 <select required>
   <option value="">Bitte auswählen*</option>
@@ -97,9 +46,17 @@
 </select><br><br></form></p>
 
 <p>Wo ist das?<br>
+
+	
+	        <div id="result">
+        <!--Position information will be inserted here-->
+    </div>
+    <button type="button" onclick="showPosition();">Stamdort Freigeben</button>
+	
 <form action="form.php" method="post"> 
       <textarea id="text" name="text" cols="50" rows="6"></textarea>
       <br><br></form></p>
+
       
 <p>Wie sieht es aus?<br>
 <form action="form.php" method="post"> 
@@ -110,16 +67,26 @@
 <form action="form.php" method="post"> 
       <textarea id="text" name="text" cols="50" rows="6"></textarea>
       <br><br>
-<a href="https://fufou.github.io/Test/Email" class="button">Weiter</a>
 </form></p>  
+
+<a href="https://fufou.github.io/Test/Startseite" class="button">Zurück</a>	
+
+
+	<a href="https://fufou.github.io/Test/Email" class="button">Weiter</a>
+
+
+
+
+
     </div>
   
+  
 
-
+  
   <style type="text/css">
     html, body { font-weight:bold; font-family:Arial; font-size:120%; height:100%; margin:0; padding:0;}
     body {
-        min-width:1000px;
+        min-width:1200px;
     }
     #left {
         float:left;
@@ -141,7 +108,8 @@
          text-align: center;
           height:900;
     }
-
+	
+	
 
 a { color: inherit; }
 
@@ -168,176 +136,17 @@ a { color: inherit; }
 	top:1px;
 }
 
-/*
- * Made by Erik Terwan
- * 24th of November 2015
- * MIT license
- *
- *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
- */
 
-
-a
-{
-  text-decoration: none;
-  color: black;
-
-  transition: color 0.3s black;
-}
-
-a:hover
-{
-
-  color: black;
-}
-
-#menuToggle
-{
-  display: block;
-  position: absolute;
-  top: 50px;
-  right: 50px;
-
-  z-index: 1;
-
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-
-  cursor: pointer;
-
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-
-  -webkit-touch-callout: none;
-}
-
-/*
- * Just a quick hamburger
- */
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-
-  background: black;
-  border-radius: 3px;
-
-  z-index: 1;
-
-  transform-origin: 4px 0px;
-
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/*
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  opacity: 1;
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: absolute;
-  width: 300px;
-  margin: -300px 0 0 0;
-  padding: 50px;
-  padding-top: 125px;
-  right: -300px;
-
-  list-style-type: none;
-
-
-  transform-origin: 0% 0%;
-  transform: translate(100%, 0);
-
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-/*
- * And let's fade it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: scale(1.0, 1.0);
-  opacity: 1;
-}
 
   </style>
 
 
 </body>
-      <div id="pos">
-        Deine Position wird ermittelt...
-    </div>
     
-    <script>
-        navigator.geolocation.getCurrentPosition(function(position){ 
-            document.getElementById('pos').innerHTML = 'Latitude: '+position.coords.latitude+' / Longitude: '+position.coords.longitude;
-        }, function(){
-            document.getElementById('pos').innerHTML = 'Deine Position konnte leider nicht ermittelt werden';
-        });
-    </script>  
     
+    
+  <script>
 
+    </script>
+  
 </html>
